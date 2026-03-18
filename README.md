@@ -1,6 +1,6 @@
 # Data_Enthusiast
 A comprehensive collection of my work. This repository highlights my ability to transform raw data into meaningful insights 
-Key Highlights: 
+
 - Real-world datasets and case studies
 - Business-oriented insights
 - End-to-end data analysis workflow
