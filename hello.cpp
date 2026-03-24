@@ -1,12 +1,35 @@
 #include"iostream"
 #include"cstdlib"
 using namespace std;
+
+class github
+{
+    private:
+        int a,b;
+
+        public:
+
+            void get_data()
+            {
+
+            }
+
+            void set_data()
+            {
+
+            }
+
+
+};
  
 main()
 {
   system("cls"); // for clear screen
-  
+  github g1;
+    
   cout<<"Hello World !!!";
+  cout<<"enter any number";
+
 
   return 0;
 }
