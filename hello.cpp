@@ -26,10 +26,11 @@ main()
 {
   system("cls"); // for clear screen
   github g1;
+  int x,y;
     
   cout<<"Hello World !!!";
   cout<<"enter any number";
-
+  cin >>x>>y;
 
   return 0;
 }
