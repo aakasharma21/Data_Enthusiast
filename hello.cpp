@@ -21,6 +21,25 @@ class github
 
 
 };
+
+class Gitlab
+{
+private:
+  /* data */
+public:
+  Gitlab()
+  {
+    cout<<"\nHi, I am Constructor";
+  }
+
+  ~ Gitlab()
+  {
+    cout<<"\n Hi, I am destructor";
+    cout<<"  I get automatically called whenever a constructor is created ";
+  }
+};
+
+
  
 main()
 {
