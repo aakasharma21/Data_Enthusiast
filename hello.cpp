@@ -31,6 +31,7 @@ main()
   cout<<"Hello World !!!";
   cout<<"enter any number";
   cin >>x>>y;
+  cout<<"entered no are:"<<x<<"  "<<y;
 
   return 0;
 }
