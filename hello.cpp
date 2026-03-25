@@ -33,6 +33,7 @@ main()
   cin >>x>>y;
   cout<<"entered no are:"<<x<<"  "<<y;
 
+ 
   return 0;
 }
   
