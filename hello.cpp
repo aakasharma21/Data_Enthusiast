@@ -51,6 +51,7 @@ main()
   cout<<"enter any number";
   cin >>x>>y;
   cout<<"entered no are:"<<x<<"  "<<y;
+  cout<<"Hey I am working on my local and don't know that code on main is already changed/updated";
 
  
   return 0;
