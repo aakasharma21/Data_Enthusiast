@@ -51,6 +51,7 @@ main()
   cout<<"enter any number";
   cin >>x>>y;
   cout<<"entered no are:"<<x<<"  "<<y;
+  cout<<"\n I am making some chnages to learn the concept of merging conflicts";
 
  
   return 0;
