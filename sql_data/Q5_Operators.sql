@@ -11,3 +11,8 @@ DROP DATABASE mylearnings
 use MyDatabase
 SELECT * FROM customers
 WHERE score BETWEEN 500 AND 800
+
+SELECT * FROM orders
+--WHERE sales>10 AND order_date>'01-01-2026'
+
+WHERE sales>50 OR order_date>'01-01-2026'
