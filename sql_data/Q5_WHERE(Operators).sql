@@ -10,7 +10,7 @@ DROP DATABASE mylearnings
 */
 use MyDatabase
 
-
+-------------------------------------------------Filtering of Data in SQL-------------------------------------------------------------------
 -- WHERE operators:
 	-- Comparsion operator: = , <> =! , > , >= , < , <=
 	-- Logical operator: AND, OR, NOT
