@@ -101,6 +101,87 @@ ON C.id=O.customer_id
 ---------------------------------------------------------------------------------------------------------------------
 
 ---------------------------------------LEFT ANTI JOIN ------------------------------------------------------------------
+-- Return all rows from Left table that has NO Match in Right table
+-- Here the Right table is behave as Lookup Table
+-- In ANTI JOIN we use WHERE condition for filtering the data
+
+--Q. Find customers who didn't order anything
+
+SELECT * FROM customers AS C
+LEFT JOIN orders AS O
+ON C.id=O.customer_id
+WHERE customer_id IS NULL  
+
+
+------------------------------RIGHT ANTI JOIN (opposite of LEFT ANTI JOIN) ------------------------------------------------------------------
+
+-- Return all rows from Right table that has NO Match in Left table
+-- Here the Left table is behave as Lookup Table
+-- In ANTI JOIN we use WHERE condition for filtering the data
+
+-- To Remember(***): WHERE condition is always applied on key(Column) of Lookup Table
+
+SELECT * FROM customers AS C
+RIGHT JOIN orders AS O
+ON C.id=O.customer_id
+WHERE C.id IS NULL
+					 --(**) Results from both are same but the way of implementation is different
+
+SELECT * FROM orders AS O 
+LEFT JOIN customers AS C
+ON C.id=O.customer_id
+WHERE C.id IS NULL
+
+
+-------------------------------FULL ANTI JOIN(Opposite of INNER JOIN) ------------------------------------------------------------------
+
+-- Return only rows that don't match in either tables(left or right)
+-- Here both tables are Lookup tables in itself therefore condition will be appllied on both
+-- In ANTI JOIN we use WHERE condition for filtering the data
+
+SELECT * FROM customers AS C
+FULL JOIN orders AS O
+ON C.id=O.customer_id
+WHERE C.id IS NULL OR O.customer_id IS NULL
+
+-- Task : Get all customers along with their orders, but only for customers who have placed an order
+
+SELECT * FROM customers AS C
+LEFT JOIN orders AS O
+ON C.id=O.customer_id
+WHERE O.customer_id IS NOT NULL
+
+
+------------------------------------ CROSS JOIN ------------------------------------------------------
+
+-- It combines every row from left with every row from rght
+-- Gives all possible combinations (called Cartesian JOIN) :
+
+	/*  Total Customers = 6
+		Total Orders = 6
+		Total Combination -> 6x6 = 36
+	*/
+
+-- No condition needed
+-- Permutation & Combination
+
+	SELECT * FROM customers
+	CROSS JOIN orders
+
+-----------------------------------------------------------------------------------------------------------
+
+SELECT * FROM customers;
+SELECT * FROM orders;
+SELECT * FROM Players;
+
+-- SQL JOINS using on more than 3 table
+
+SELECT * FROM customers AS C
+LEFT JOIN orders AS O
+ON C.id=O.customer_id
+LEFT JOIN Players AS P
+ON O.customer_id=P.id
+WHERE P.id IS NOT NULL
 
 
 
