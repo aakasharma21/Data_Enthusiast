@@ -1,5 +1,12 @@
 --------------------------------------Revision of SQL Queries----------------------------------------------------
+/* 
 
+DDL(Data Definition Language) - CREATE, ALTER, DROP
+DML(Data Manaipulation Language) - INSERT, UPDATE, DELETE
+Filtering of Data/Queries - WHERE condtions
+SQL JOINS
+
+*/
 use mydatabase
 SELECT * FROM orders
 ORDER BY sales,order_date DESC
