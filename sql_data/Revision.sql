@@ -1,3 +1,5 @@
+--------------------------------------Revision of SQL Queries----------------------------------------------------
+
 use mydatabase
 SELECT * FROM orders
 ORDER BY sales,order_date DESC
