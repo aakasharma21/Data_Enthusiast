@@ -184,7 +184,25 @@ ON O.customer_id=P.id
 WHERE P.id IS NOT NULL
 
 
+-- Combining two tables from different databases
+/*
 
+ -- On Same Server:
+
+ If both databases reside on the same SQL Server instance, you can query them together using a three-part naming convention: 
+ [DatabaseName].[SchemaName].[TableName]
+
+ -- On Different Server:
+
+ If the databases are on separate servers, you must first establish a Linked Server connection. Once linked, you use a four-part naming convention:
+ [ServerName].[DatabaseName].[SchemaName].[TableName]
+
+
+*/
+
+SELECT * FROM MyDatabase.dbo.customers AS C
+FULL JOIN SalesDB.Sales.Customers AS CA
+ON C.id=CA.CustomerID
 
 
 

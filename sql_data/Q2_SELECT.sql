@@ -88,7 +88,7 @@ ORDER BY order_date DESC
 --example:
 
 SELECT id, first_name,
-'India' AS Country  -- >> This is static value
+'India' AS Country  -- >> 'India' is a static value providing to a user define column i.e. 'Country'
 FROM customers  
 
 ------------------------------------------------------------------------------------

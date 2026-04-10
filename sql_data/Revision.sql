@@ -65,3 +65,12 @@ ON E.id=C.id
 SELECT * FROM Employee AS E
 LEFT JOIN customers AS C
 ON E.id=C.id
+
+-- SQL JOINS on multiple tables
+
+SELECT * FROM customers AS C
+LEFT JOIN orders AS O
+ON C.id=O.customer_id
+LEFT JOIN Players AS P
+ON O.customer_id=P.id
+WHERE O.customer_id IS NOT NULL AND P.id IS NOT NULL
