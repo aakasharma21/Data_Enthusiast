@@ -101,7 +101,7 @@ SELECT first_name FROM Employee
       ,[Sales]
       ,[CreationTime]
   FROM sales.OrdersArchive
-  ORDER BY OrderID
+  ORDER BY OrderID              -- "ORDER BY" is used to sort data either in ascending/descending order, by default it's Ascending
   
 
   -- Tables from two different databases
